@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <link rel="stylesheet" href="page.css">
+    <style>
+        <!--
+        .styling{
+        background-color:black;
+        color:lime;
+        font: bold 18px MS Sans Serif;
+        padding: 3px;
+        }
+        -->
+        </style>
+</head>
+<body>
+    <h1><u>Social Media</u></h1>
+    <div class="Top">
+   <h2>Instagram</h2>
+        <img src="instagram.jpg" alt="">
+        <p>Instagram is an American photo and video sharing social networking service founded in 2010 by Kevin Systrom and Mike Krieger, and later acquired by American company Facebook Inc., now known as Meta Platforms. The app allows users to upload media that can be edited with filters and organized by hashtags and geographical tagging. Posts can be shared publicly or with preapproved followers. Users can browse other users' content by tag and location, view trending content, like photos, and follow other users to add their content to a personal feed.</p>
+        <a href="https://www.instagram.com/">Visit Instagram</a>
+        </div>
+        <div class="Mid">
+            <h2>Facebook</h2>
+                 <img src="Facebook-logo.png" alt="">
+                 <p>Facebook is an online social media and social networking service owned by American company Meta Platforms. Founded in 2004 by Mark Zuckerberg </p>
+                 </div>
+                 <div class="Last">
+                    <h2>Whatsapp</h2>
+                         <img src="wa.png" alt="">
+                         <p>WhatsApp Messenger, or simply WhatsApp, is an internationally available freeware, cross-platform centralized instant messaging (IM) and voice-over-IP (VoIP) service owned by American company Meta Platforms (formerly Facebook) </p>
+                         </div>
+                         <span id="digitalclock" class="styling"></span>
+
+<script>
+<!--
+
+/*****************************************
+* LCD Clock script- by Javascriptkit.com
+* Featured on/available at http://www.dynamicdrive.com/
+* This notice must stay intact for use
+*****************************************/
+
+var alternate=0
+
+function show(){
+var clockobj=document.getElementById? document.getElementById("digitalclock") : document.all.digitalclock
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var dn="AM"
+
+if (hours==12) dn="PM" 
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0) hours=12
+if (hours.toString().length==1)
+hours="0"+hours
+if (minutes<=9)
+minutes="0"+minutes
+
+if (alternate==0)
+clockobj.innerHTML=hours+"<font color='lime'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+else
+clockobj.innerHTML=hours+"<font color='black'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+alternate=(alternate==0)? 1 : 0
+setTimeout("show()",1000)
+}
+window.onload=show
+
+//-->
+</script> <br><br>
+                         <a href="page2.html">Go to page 2</a> <br>
+                         <a href="page3.html">Go to page 3</a> <br>
+                         <a href="page4.html">Go to page 4</a>
+        
+</body>
+</html>

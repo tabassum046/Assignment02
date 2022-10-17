@@ -1,0 +1,38 @@
+img{
+  width: 200px;  
+  border-radius: 10%;
+}
+
+p{
+  background-color: rgb(220, 206, 211); 
+ 
+  
+}
+body{
+  background-color: bisque;
+}
+h1{
+background-color:bisque;
+  text-align: center;
+ 
+  
+}
+h2{
+  color: rgb(6, 6, 51);
+  background-color: rgb(147, 105, 150);
+  border-radius: 20px;
+  width: 40%; 
+  padding: 15px; 
+}
+div{
+  border: 2px solid black;
+  margin: 40px;
+  padding: 30px;
+  box-shadow: 4px 4px 5px blues;
+  background-color: rgb(148, 173, 193);
+
+}
+h2:hover{
+  background-color: hotpink;
+ 
+}
